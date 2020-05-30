@@ -9,8 +9,8 @@ import { catchError } from 'rxjs/operators';
 })
 export class ApiService {
   product: Product;
-  private baseUrl = 'https://localhost:5001/api/products';
-
+  //private baseUrl = 'https://localhost:5001/api/products';
+  private baseUrl = 'https://ac29747.azurewebsites.net/api/products';
   constructor(private http: HttpClient) { }
 
   getProduct(id: number): Observable<any> {
